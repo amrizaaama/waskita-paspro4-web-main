@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="guest_style.css">
+
+    <title>Guest Book</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR START -->
+    <div class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <div class="header">
+          <img src="img/waskita.png" alt="logo" /><a class="navbar-brand" href="index.html"><span3>|</span3> WASKITA - PASPRO 4</a>
+        </div>
+        <button class="navbar-toggler btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="guestbook.html">Guest</a>
+            <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item tombol btn btn-outline-danger" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR ENDS -->
+
+    <!-- JUMBOTRON START -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4"><span1>DATA </span1>DIRI <span2>TAMU</span2></h1>
+                <form action="index.html" class="form-check-input">
+                    <table>
+                        <tr>
+                            <td>Nama Tamu</td>
+                            <td>:</td>
+                            <td><input class="input" type="text" name="nama_tamu"></td>
+                        </tr>
+                        <tr>
+                            <td>Nama Perusahaan</td>
+                            <td>:</td>
+                            <td><input class="input" type="text" name="nama_perusahaan"></td>
+                        </tr>
+                        <tr>
+                            <td>No Handphone</td>
+                            <td>:</td>
+                            <td><input class="input" type="text" name="no_handphone"></td>
+                        </tr>
+                        <tr>
+                            <td>Suhu Badan</td>
+                            <td>:</td>
+                            <td><input class="input" type="number" name="suhu_badan"></td>
+                        </tr>
+                        <tr>
+                            <td>Nama Pegawai yang ingin ditemui</td>
+                            <td>:</td>
+                            <td><input class="input" type="text" name="nama_pegawai"></td>
+                        </tr>
+                        <tr>
+                            <td>Keperluan</td>
+                            <td>:</td>
+                            <td><input class="input" type="text" name="nama_perusahaan"></td>
+                        </tr>
+                        <tr>
+                            <td>Foto KTP</td>
+                            <td>:</td>
+                            <td><input type="file" value="upload gambar"/></td>
+                        </tr>
+                         <!-- Radio Button -->
+                        <tr>
+                            <td>Apakah pernah keluar rumah/tempat umum (pasar, fasyankes, kerumunan orang, dan lain-lain)?</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Apakah pernah menggunakan transportasi umum?</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Apakah pernah melakukan perjalanan ke luar kota/internasional? (wilayah yang terjangkit/zona merah)</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Apakah anda mengikuti kegiatan yang melibatkan orang banyak?</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Apakah memiliki riwayat kontak erat dengan orang yang dinyatakan ODP, PDP atau konfirm COVID-19 (berjabat tangan, berbicara, berada dalam satu ruangan/satu rumah)?</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td>Apakah pernah mengalami demam/batuk/pilek/sakit tenggorokan/sesak napas dalam 14 hari terakhir?</td>
+                            <td>:</td>
+                            <form>
+                                <td>
+                                    <input type="radio" id="Ya" name="milih" value="Ya">
+                                    <label for="Ya">Ya</label>
+                                    <input type="radio" id="Tidak" name="milih" value="Tidak">
+                                    <label for="Tidak">Tidak</label>
+                                </td>
+                            </form>
+                        </tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button type="submit" name="kirim">Kirim</button>
+                            <button type="reset" name="reset">Batal</button>
+                        </td>
+                    </table>
+                </form>
+      </div>
+    </div>
+    <!-- JUMBOTRON ENDS -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
